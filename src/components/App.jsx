@@ -1,5 +1,7 @@
-const { Profile } = require('./Profile/Profile');
+import { Statistics } from './Statistics/Statistics';
+
+// const { Profile } = require('./Profile/Profile');
 
 export const App = () => {
-  return;
+  return <Statistics />;
 };
