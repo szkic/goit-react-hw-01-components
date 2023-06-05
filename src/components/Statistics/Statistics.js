@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import data from './data.json';
+// import data from './data.json';
 import css from './Statistics.module.css';
 
-export const Statistics = ({ title = 'Upload Stats', stats = data }) => (
+export const Statistics = ({ title, stats }) => (
   <section className={css.statistics}>
     <h2 className={css.title}>{title}</h2>
     <ul className={css.statList}>
@@ -26,7 +26,7 @@ export const Statistics = ({ title = 'Upload Stats', stats = data }) => (
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.object,
+  stats: PropTypes.array,
 };
 
 function randomColor() {

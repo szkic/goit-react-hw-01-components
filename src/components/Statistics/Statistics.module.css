@@ -1,7 +1,3 @@
-body {
-  background-color: #e7ecf1;
-}
-
 .statistics {
   display: flex;
   flex-direction: column;
