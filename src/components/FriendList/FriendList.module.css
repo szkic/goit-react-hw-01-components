@@ -1,10 +1,8 @@
 .friendList {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 220px;
+  margin: 0 auto 50px;
   list-style: none;
 }
 
@@ -15,7 +13,7 @@
   padding: 10px;
   margin: 10px;
   width: 200px;
-  box-shadow: 8px 8px 16px -5px rgba(66, 68, 90, 1);
+  box-shadow: 8px 7px 24px -12px rgba(66, 68, 90, 0.46);
 }
 
 .status {

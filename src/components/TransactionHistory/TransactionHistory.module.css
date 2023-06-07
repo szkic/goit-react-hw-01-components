@@ -1,0 +1,23 @@
+.transactionHistory {
+  border-collapse: collapse;
+  max-width: 450px;
+  margin: 0 auto 50px;
+  box-shadow: 8px 7px 24px -12px rgba(66, 68, 90, 0.46);
+}
+
+.title {
+  background-color: #01bdd5;
+}
+
+.tableEl {
+  width: 150px;
+  text-align: center;
+}
+
+.tableRow {
+  background-color: white;
+}
+
+.tableRow:nth-of-type(2n) {
+  background-color: #ecf1f3;
+}

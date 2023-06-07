@@ -1,16 +1,15 @@
 import PropTypes from 'prop-types';
 import css from './FriendList.module.css';
-import { fireEvent } from '@testing-library/react';
 
 export const FriendList = ({ friends }) => {
   return (
     <ul className={css.friendList}>
-      {friends.map(friend => (
+      {friends.map(({ name, avatar, isOnline, id }) => (
         <FriendListItem
-          avatar={friend.avatar}
-          name={friend.name}
-          isOnline={friend.isOnline}
-          key={friend.id}
+          avatar={avatar}
+          name={name}
+          isOnline={isOnline}
+          key={id}
         />
       ))}
     </ul>
